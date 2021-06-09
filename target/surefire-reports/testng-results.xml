@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="14023" started-at="2021-06-09T19:08:28 EDT" finished-at="2021-06-09T19:08:42 EDT">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="14023" started-at="2021-06-09T19:08:28 EDT" finished-at="2021-06-09T19:08:42 EDT">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="FAIL" signature="invalidLoginErrorMessageValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="invalidLoginErrorMessageValidation" duration-ms="4891" started-at="2021-06-09T19:08:28 EDT" data-provider="invalidData" finished-at="2021-06-09T19:08:33 EDT">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void com.crm.qa.testcases.LoginPageTest.invalidLoginErrorMessageValidation(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: invalidLoginErrorMessageValidation([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Admin1,(java.lang.String) Hum@nhrm123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void com.crm.qa.testcases.LoginPageTest.invalidLoginErrorMessageValidation(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: invalidLoginErrorMessageValidation([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Admin1,(java.lang.String) Hum@nhrm123]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:905)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginErrorMessageValidation -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="SetUp" is-config="true" duration-ms="3473" started-at="2021-06-09T19:08:28 EDT" finished-at="2021-06-09T19:08:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="invalidLoginErrorMessageValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="invalidLoginErrorMessageValidation" duration-ms="723" started-at="2021-06-09T19:08:31 EDT" data-provider="invalidData" finished-at="2021-06-09T19:08:32 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credetials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginErrorMessageValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="689" started-at="2021-06-09T19:08:32 EDT" finished-at="2021-06-09T19:08:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="SetUp" is-config="true" duration-ms="1651" started-at="2021-06-09T19:08:33 EDT" finished-at="2021-06-09T19:08:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="loginPageTitleTest" duration-ms="18" started-at="2021-06-09T19:08:34 EDT" finished-at="2021-06-09T19:08:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="666" started-at="2021-06-09T19:08:34 EDT" finished-at="2021-06-09T19:08:35 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="SetUp" is-config="true" duration-ms="1695" started-at="2021-06-09T19:08:35 EDT" finished-at="2021-06-09T19:08:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="crmLogoImageTest" duration-ms="85" started-at="2021-06-09T19:08:37 EDT" finished-at="2021-06-09T19:08:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmLogoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="667" started-at="2021-06-09T19:08:37 EDT" finished-at="2021-06-09T19:08:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="SetUp" is-config="true" duration-ms="1666" started-at="2021-06-09T19:08:37 EDT" finished-at="2021-06-09T19:08:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="loginTest" duration-ms="1464" started-at="2021-06-09T19:08:39 EDT" finished-at="2021-06-09T19:08:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="1155" started-at="2021-06-09T19:08:41 EDT" finished-at="2021-06-09T19:08:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.JustATest">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.crm.qa.testcases.JustATest@598067a5]" name="test" duration-ms="4" started-at="2021-06-09T19:08:28 EDT" finished-at="2021-06-09T19:08:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.crm.qa.testcases.JustATest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

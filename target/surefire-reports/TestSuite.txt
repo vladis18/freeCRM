@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.596 sec <<< FAILURE! - in TestSuite
+invalidLoginErrorMessageValidation(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 1.435 sec  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+[public void com.crm.qa.testcases.LoginPageTest.invalidLoginErrorMessageValidation(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: invalidLoginErrorMessageValidation([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Admin1,(java.lang.String) Hum@nhrm123]
+
